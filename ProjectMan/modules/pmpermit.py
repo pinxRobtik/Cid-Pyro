@@ -23,13 +23,13 @@ from .help import add_command_help
 
 DEF_UNAPPROVED_MSG = (
     "╔════════════════════╗\n"
-    "     ⛑ 𝗔𝗧𝗧𝗘𝗡𝗧𝗜𝗢𝗡 𝗣𝗟𝗘𝗔𝗦𝗘 ⛑\n"
+    " 𝗣 𝗬 𝗥 𝗢 𝗖 𝗜 𝗗 - 𝗣 𝗠\n"
     "╚════════════════════╝\n"
     "• Saya belum menyetujui anda untuk PM.\n"
     "• Tunggu sampai saya menyetujui PM anda.\n"
     "• Jangan Spam Chat atau anda akan otomatis diblokir.\n"
     "╔════════════════════╗\n"
-    "    𝗣𝗲𝘀𝗮𝗻 𝗢𝘁𝗼𝗺𝗮𝘁𝗶𝘀 𝗕𝘆 -𝗨𝘀𝗲𝗿𝗕𝗼𝘁\n"
+    "    𝗣𝗲𝘀𝗮𝗻 𝗢𝘁𝗼𝗺𝗮𝘁𝗶𝘀 𝗕𝘆 -𝗣 𝗥 𝗘 𝗠 𝗜 𝗨 𝗠 𝗕𝗼𝘁\n"
     "╚════════════════════╝\n"
 )
 
@@ -105,7 +105,7 @@ async def auto_accept(client, message):
             approve(message.chat.id)
             await client.send_message(
                 message.chat.id,
-                f"<b>Menerima Pesan!!!</b>\n{message.from_user.mention} <b>Terdeteksi Developer PyroMan-Userbot</b>",
+                f"<b>Menerima Pesan!!!</b>\n{message.from_user.mention} <b>Terdeteksi Developer PyroCid-Userbot</b>",
                 parse_mode=enums.ParseMode.HTML,
             )
         except IntegrityError:
