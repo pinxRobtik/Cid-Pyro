@@ -18,7 +18,7 @@ from ProjectMan.helpers.misc import create_botlog, heroku
 from ProjectMan.modules import ALL_MODULES
 
 MSG_ON = """
-🔥 **PyroMan-Userbot Berhasil Di Aktifkan**
+🔥 **PyroCID-Userbot Berhasil Di Aktifkan**
 ━━
 ➠ **Userbot Version -** `{}`
 ➠ **Ketik** `{}alive` **untuk Mengecheck Bot**
@@ -33,7 +33,7 @@ async def main():
         try:
             await bot.start()
             bot.me = await bot.get_me()
-            await bot.join_chat("Lunatic0de")
+            await bot.join_chat("cidsupport")
             await bot.join_chat("SharingUserbot")
             try:
                 await bot.send_message(
@@ -46,7 +46,7 @@ async def main():
             )
         except Exception as a:
             LOGGER("main").warning(a)
-    LOGGER("ProjectMan").info(f"PyroMan-UserBot v{BOT_VER} [🔥 BERHASIL DIAKTIFKAN! 🔥]")
+    LOGGER("ProjectMan").info(f"PyroCID-UserBot v{BOT_VER} [🔥 BERHASIL DIAKTIFKAN! 🔥]")
     if bot1 and not str(BOTLOG_CHATID).startswith("-100"):
         await create_botlog(bot1)
     await idle()
@@ -54,7 +54,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    LOGGER("ProjectMan").info("Starting PyroMan-UserBot")
+    LOGGER("ProjectMan").info("Starting PyroCid-UserBot")
     install()
     heroku()
     LOOP.run_until_complete(main())
