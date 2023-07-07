@@ -20,9 +20,9 @@ from .help import add_command_help
 @Client.on_message(filters.command("join", cmd) & filters.me)
 async def join(client: Client, message: Message):
     Man = message.command[1] if len(message.command) > 1 else message.chat.id
-    xxnx = await edit_or_reply(message, "`Processing...`")
+    xxnx = await edit_or_reply(message, "`Sabar Lah...`")
     try:
-        await xxnx.edit(f"**Berhasil Bergabung ke Chat ID** `{Man}`")
+        await xxnx.edit(f"**Gatau Gabut Id** `{Man}`")
         await client.join_chat(Man)
     except Exception as ex:
         await xxnx.edit(f"**ERROR:** \n\n{str(ex)}")
