@@ -42,7 +42,7 @@ del _GCAST_BLACKLIST
 @Client.on_message(filters.command("gcast", cmd) & filters.me)
 async def gcast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
-        Man = await edit_or_reply(message, "`Started global broadcast...`")
+        Man = await edit_or_reply(message, "`Sedang Mengirim Pesan Secara Global...`")
     else:
         return await message.edit_text("**Berikan Sebuah Pesan atau Reply**")
     done = 0
