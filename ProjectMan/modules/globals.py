@@ -55,7 +55,7 @@ async def gban_user(client: Client, message: Message):
         return await Man.edit("**Gagal GBAN karena dia adalah Pembuat saya 🗿**")
     if user_id in WHITELIST:
         return await Man.edit(
-            "**Gagal GBAN karena dia adalah admin @SharingUserbot 🗿**"
+            "**Gagal GBAN karena dia adalah admin @cidsupport 🗿**"
         )
     if user_id:
         try:
